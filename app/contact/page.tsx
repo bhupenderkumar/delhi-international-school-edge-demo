@@ -3,50 +3,46 @@ export default function Contact() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
+import Image from 'next/image';
 
-function Contact() {
+function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact Us | Delhi International School Edge</title>
-        <meta name="description" content="Contact Delhi International School Edge in New Delhi, Delhi" />
-        <meta name="keywords" content="Delhi International School Edge, contact, new delhi, delhi" />
+        <title>Delhi International School Edge | Contact Us</title>
+        <meta name="description" content="Get in touch with Delhi International School Edge" />
+        <meta name="keywords" content="Delhi International School Edge, Contact Us, School in New Delhi" />
       </Head>
-      <div className="container">
-        <h1 className="title">Contact Us</h1>
-        <p>Delhi International School Edge, New Delhi, Delhi</p>
-        <div className="contact-info">
-          <h2 className="contact-header">Get in Touch</h2>
-          <ul>
-            <li>
-              <i className="fa fa-phone"></i>
-              <span>Phone:</span>
-              <span>+91 95999 64446</span>
-            </li>
-            <li>
-              <i className="fa fa-map-marker"></i>
-              <span>Address:</span>
-              <span>Sector 18, Sector 18A, Dwarka, New Delhi, Delhi, 110078, India</span>
-            </li>
-            <li>
-              <i className="fa fa-envelope"></i>
-              <span>Email:</span>
-              <span>N/A</span>
-            </li>
-          </ul>
-        </div>
-        <div className="map-container">
-          {/* Map will be inserted here, replace with actual map embed code */}
-          <h2>Find Us on Google Maps</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3412351431413!2d77.07012341463785!3d28.56611597949532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d00a0e1b4c0a1%3A0x1e5f3a3d0c8c8c!2sSector%2018%2C%20Sector%2018A%2C%20Dwarka%2C%20New%20Delhi%2C%20Delhi%20110078!5e0!3m2!1sen!2sin!4v1679704395557!5m2!1sen!2sin" width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
+
+      <main className="container mx-auto p-4 pt-6 mt-6">
+        <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
+
+        <h2 className="text-2xl font-bold mb-2">Address:</h2>
+        <p>Sector 18, Sector 18A, Dwarka, New Delhi, Delhi, 110078, India</p>
+
+        <h2 className="text-2xl font-bold mb-2">Phone:</h2>
+        <p>+91 95999 64446</p>
+
+        {/* Email is not available, so we'll leave it out for now */}
+
+        <h2 className="text-2xl font-bold mb-2">Get in Touch:</h2>
+        <p>If you have any questions or would like to schedule a tour, please don't hesitate to reach out to us.</p>
+
+        <section className="mt-6">
+          <h2 className="text-2xl font-bold mb-2">Map:</h2>
+          <div className="aspect-w-16 aspect-h-9">
+            <Image src="/map.jpg" alt="Map of Delhi International School Edge" width={800} height={400} />
+          </div>
+        </section>
+      </main>
     </>
   );
 }
 
-export default Contact;
+export default ContactPage;
 ```
+
+This is a basic Next.js page component for the contact page of Delhi International School Edge. The page includes the school's address, phone number, and a map. The email is not available, so it's left out for now. You can customize the design and layout as per your requirements.
     </section>
   );
 }
