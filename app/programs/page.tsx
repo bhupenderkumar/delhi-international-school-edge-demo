@@ -3,61 +3,89 @@ export default function Programs() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
+import Link from 'next/link';
 
-const ProgramsPage = () => {
+function ProgramsPage() {
   return (
-    <div className="container mx-auto p-4">
+    <>
       <Head>
-        <title>Programs | Delhi International School Edge</title>
+        <title>Delhi International School Edge | Programs</title>
         <meta name="description" content="Delhi International School Edge Programs" />
       </Head>
+      <div className="container">
+        <h1>Programs</h1>
+        <p>Explore our range of programs designed to unlock the full potential of our students.</p>
 
-      <header className="bg-gray-800 text-white p-4 mb-4">
-        <h1 className="text-3xl font-bold">Programs</h1>
-      </header>
+        <h2>Curriculum</h2>
+        <p>Our curriculum is designed to foster a love of learning, and to equip students with the skills and knowledge they need to succeed in an ever-changing world.</p>
 
-      <main className="max-w-3xl mx-auto p-4">
-        <section className="bg-gray-100 p-4 mb-4">
-          <h2 className="text-2xl font-bold mb-2">Curriculum Overview</h2>
-          <p>
-            Delhi International School Edge follows the IB PYP, MYP, and IBDP curricula to provide a well-rounded education to our students.
-          </p>
-        </section>
+        <h2>Subjects</h2>
+        <ul>
+          <li>
+            <Link href="/program/subject/mathematics">
+              <a>Mathematics</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/program/subject/science">
+              <a>Science</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/program/subject/english">
+              <a>English</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/program/subject/hindi">
+              <a>Hindi</a>
+            </Link>
+          </li>
+        </ul>
 
-        <section className="bg-gray-100 p-4 mb-4">
-          <h2 className="text-2xl font-bold mb-2">Programs Offered</h2>
-          <ul>
-            <li>IB PYP (Primary Years Programme)</li>
-            <li>IB MYP (Middle Years Programme)</li>
-            <li>IBDP (International Baccalaureate Diploma Programme)</li>
-            <li>Co-Curricular Activities (CCA)</li>
-          </ul>
-        </section>
+        <h2>Extracurricular Activities</h2>
+        <ul>
+          <li>
+            <Link href="/program/activity/sports">
+              <a>Sports</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/program/activity/music">
+              <a>Music</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/program/activity/arts">
+              <a>Arts</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/program/activity/debating">
+              <a>Debating</a>
+            </Link>
+          </li>
+        </ul>
 
-        <section className="bg-gray-100 p-4 mb-4">
-          <h2 className="text-2xl font-bold mb-2">Extracurricular Activities</h2>
-          <ul>
-            <li>Sports (Cricket, Football, Basketball, etc.)</li>
-            <li>Cultural Events (Music, Dance, Art, etc.)</li>
-            <li>Debating and Public Speaking</li>
-            <li>School Clubs (Robotics, Coding, etc.)</li>
-          </ul>
-        </section>
-      </main>
-
-      <footer className="bg-gray-800 text-white p-4">
-        <p>&copy; 2023 Delhi International School Edge</p>
-        <p>Phone: +91 95999 64446</p>
-        <p>Address: Sector 18, Sector 18A, Dwarka, New Delhi, Delhi, 110078, India</p>
-      </footer>
-    </div>
+        <h2>Contact Us</h2>
+        <p>
+          For more information about our programs, please contact us at:
+          <br />
+          Phone: +91 95999 64446
+          <br />
+          Address: Sector 18, Sector 18A, Dwarka, New Delhi, Delhi, 110078, India
+        </p>
+      </div>
+    </>
   );
-};
+}
 
 export default ProgramsPage;
 ```
 
-This JSX code generates a simple webpage for the programs page of Delhi International School Edge. It includes a header with a title, a main section with three sub-sections for curriculum overview, programs offered, and extracurricular activities, and a footer with contact information.
+This JSX code generates a basic page component for the Programs page of the Delhi International School Edge website. It includes a title, meta description, and a content section with headers, paragraphs, and links to other pages.
+
+You can customize this code to fit your specific needs and add more features as required.
     </section>
   );
 }
