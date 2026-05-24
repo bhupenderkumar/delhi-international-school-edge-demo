@@ -2,70 +2,76 @@ export default function Download() {
   return (
     <section className="section">
       ```jsx
-import Head from 'next/head';
-import Link from 'next/link';
+// pages/download.js
 
-function DownloadPage() {
+import Head from 'next/head';
+
+function Download() {
   return (
-    <>
+    <div className="container mx-auto p-4">
       <Head>
-        <title>Download | Delhi International School Edge</title>
-        <meta name="description" content="Download important documents and resources from Delhi International School Edge." />
+        <title>Delhi International School Edge - Download</title>
+        <meta name="description" content="Download resources from Delhi International School Edge" />
       </Head>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <h1 className="page-title">Download</h1>
-            <p className="page-subtitle">Download important documents and resources from Delhi International School Edge.</p>
-          </div>
+      <h1 className="text-3xl font-bold text-center mb-4">Downloads</h1>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto p-4">
+        <div className="bg-white rounded shadow-md p-4">
+          <h2 className="text-lg font-bold mb-2">Curriculum</h2>
+          <p>
+            Click on the link below to download our curriculum.
+          </p>
+          <a
+            href="#"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Download Curriculum
+          </a>
         </div>
 
-        <div className="row">
-          <div className="col-md-3 download-card">
-            <h3>Admission Form</h3>
-            <p>Download the admission form for new students.</p>
-            <Link href="/download/admission-form.pdf">
-              <a className="btn btn-primary">Download Now</a>
-            </Link>
-          </div>
-          <div className="col-md-3 download-card">
-            <h3>Syllabus</h3>
-            <p>Download the latest syllabus for all classes.</p>
-            <Link href="/download/syllabus.pdf">
-              <a className="btn btn-primary">Download Now</a>
-            </Link>
-          </div>
-          <div className="col-md-3 download-card">
-            <h3>Timetable</h3>
-            <p>Download the latest timetable for all classes.</p>
-            <Link href="/download/timetable.pdf">
-              <a className="btn btn-primary">Download Now</a>
-            </Link>
-          </div>
-          <div className="col-md-3 download-card">
-            <h3>Results</h3>
-            <p>Download the latest results for all classes.</p>
-            <Link href="/download/results.pdf">
-              <a className="btn btn-primary">Download Now</a>
-            </Link>
-          </div>
+        <div className="bg-white rounded shadow-md p-4">
+          <h2 className="text-lg font-bold mb-2">Timetable</h2>
+          <p>
+            Click on the link below to download our timetable.
+          </p>
+          <a
+            href="#"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Download Timetable
+          </a>
         </div>
 
-        <div className="row">
-          <div className="col-md-12">
-            <h2>Contact Us</h2>
-            <p>Phone: +91 95999 64446</p>
-            <p>Address: Sector 18, Sector 18A, Dwarka, New Delhi, Delhi, 110078, India</p>
-          </div>
+        <div className="bg-white rounded shadow-md p-4">
+          <h2 className="text-lg font-bold mb-2">Results</h2>
+          <p>
+            Click on the link below to download our results.
+          </p>
+          <a
+            href="#"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Download Results
+          </a>
         </div>
       </div>
-    </>
+
+      <h2 className="text-lg font-bold mt-8">Contact Us</h2>
+      <p>
+        For any queries related to downloads, please contact us at +91 95999 64446.
+      </p>
+      <p>
+        Address: Sector 18, Sector 18A, Dwarka, New Delhi, Delhi, 110078, India.
+      </p>
+    </div>
   );
 }
 
-export default DownloadPage;
+export default Download;
 ```
+
+This is a basic Next.js page component for the download page of Delhi International School Edge. The page includes a header with metadata, a grid of downloadable resources, and a contact section at the bottom. You can customize the content and styles according to your needs.
     </section>
   );
 }
